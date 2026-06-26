@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Game</title>
+  <style>
+#game {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  background-image:
+    linear-gradient(to right, gray 1px, transparent 1px),
+    linear-gradient(to bottom, gray 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+</style>
+</head>
+<body>
+
+  <!-- スタート画面 -->
+  <div id="menu">
+    <h1>Fields.io</h1>
+    <button onclick="startGame()">START</button>
+  </div>
+
+  <!-- ゲーム画面 -->
+  <div id="game">
+  <h1>ゲーム開始！</h1>
+</div>
+
+  <script>
+    function startGame() {
+      // スタート画面を消す
+      document.getElementById("menu").style.display = "none";
+
+      // ゲーム画面を表示
+      document.getElementById("game").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
