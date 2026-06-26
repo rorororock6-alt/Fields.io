@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Game</title>
+</head>
+<body>
+
+  <!-- スタート画面 -->
+  <div id="menu">
+    <h1>Fields.io</h1>
+    <button onclick="startGame()">START</button>
+  </div>
+
+  <!-- ゲーム画面 -->
+  <div id="game" style="display:none;">
+    <h1>ゲーム開始！</h1>
+    <p>スコア: 0</p>
+  </div>
+
+  <script>
+    function startGame() {
+      // スタート画面を消す
+      document.getElementById("menu").style.display = "none";
+
+      // ゲーム画面を表示
+      document.getElementById("game").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
