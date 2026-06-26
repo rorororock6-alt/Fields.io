@@ -2,6 +2,19 @@
 <html>
 <head>
   <title>Mini Game</title>
+  <style>
+#game {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  background-image:
+    linear-gradient(to right, gray 1px, transparent 1px),
+    linear-gradient(to bottom, gray 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+</style>
 </head>
 <body>
 
@@ -12,10 +25,9 @@
   </div>
 
   <!-- ゲーム画面 -->
-  <div id="game" style="display:none;">
-    <h1>ゲーム開始！</h1>
-    <p>スコア: 0</p>
-  </div>
+  <div id="game">
+  <h1>ゲーム開始！</h1>
+</div>
 
   <script>
     function startGame() {
